@@ -31,41 +31,47 @@
             </ul>
           </nav>
                         <!--Первый слайд-->
-          <lable for="slide-one">
-          <div class="slider slide-1">
-            <h2>Долго, дорого, скрупулёзно.</h2>
-            <p>
-            	Математически выверенный дизайн для вашего сайта или мобильного приложения.
-            </p>
-            <a href="#">Узнать больше</a>
-					</div>
-					</lable>
-                        <!--Второй слайд-->
-          <label for="slide-two">
-          <div class="slider slide-2">
-            <h2>Любите ли вы математику, как любим её мы?</h2>
-            <p>
-            	Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, что бы дать им возможность всё просчитать
-            </p>
-            <a href="#">Узнать больше</a>
-					</div>
-					</label> 
-                        <!--Третий слайд-->
-          <label for="slide-three">
-          <div class="slider slide-3">
-            <h2>Только наркотики, только хордкор!</h2>
-            <p>
-            	Все дизайнерские решения в нашей компании принимаются только под действием качественных галлюциногенов
-            </p>
-            <a href="#">Узнать больше</a>
-					</div>
-					</label>
           
-          <form class="slider-item">
-          	<input id="slide-one" type="radio" name="slide">
-          	<input id="slide-two" type="radio" name="slide">
-          	<input id="slide-three" type="radio" name="slide">
-          </form>
+          <div class="slider-inner">
+          	<div class="slider slide-1">
+          	  <h2>Долго, дорого, скрупулёзно.</h2>
+          	  <p>
+          	  	Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
+          	  </p>
+          	  <a href="#">Узнать больше</a>
+							<div class="image-slide-1"><img src="img/slider-1.png"></div>
+						</div>
+					
+                        <!--Второй слайд-->
+          
+          	<div class="slider slide-2">
+          	  <h2>Любите ли вы математику, как любим её мы?</h2>
+          	  <p>
+          	  	Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, что бы дать им возможность всё просчитать
+          	  </p>
+          	  <a href="#">Узнать больше</a>
+						</div>
+					 
+                        <!--Третий слайд-->
+          
+          	<div class="slider slide-3">
+          	  <h2>Только наркотики, только хордкор!</h2>
+          	  <p>
+          	  	Все дизайнерские решения в нашей компании принимаются только под действием качественных галлюциногенов
+          	  </p>
+          	  <a href="#">Узнать больше</a>
+						</div>
+					</div>
+          
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+          	<label for="btn-1"></label>
+          	<label for="btn-2"></label>
+          	<label for="btn-3"></label>
+				  </div>
+       
         </div>
 		  </header>
 		  <main data-content="catalog">
@@ -154,8 +160,7 @@
 						<a class="glukhanko" href="#" title="glukhanko"></a>
 						<a class="htmlacademy" href="#" title="htmlacademy"></a>
 						<a class="borodinski" href="#" title="Borodinski"></a>
-		  		</div>
-				</div> 		
+		  		</div>	
 		 			
 		    <div class="maps">
 		  		<div class="adress">                   <!--Карта как фон в css-->
@@ -171,10 +176,12 @@
 		  			</p>
 		  			<a href="mail@htmlacademy.ru">Напишите нам</a>
 		  		</div>          		  		
-		  	</div>		
+		  	</div>
+			</div>		
 			</main>
 			
-			<footer class="main-footer">	
+			<footer class="main-footer">
+	  	<div class="container">	
 		  	<div class="social-block-left">
 		  		<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
@@ -187,24 +194,25 @@
 		      <p>
 		    	  Скидка 10% для друзей из социальных сетей.
 		      </p>
-				</div>      
+				</div>
+			</div>      
 			</footer>
 			                     <!--Скрытая форма-->
-			<div class="popup">             
-         <form class="write-us" action="#" method="get">
-           <label>Ваше имя:
-             <input type="text" name="name">
-					</label>
-           <label>Ваш e-mail:
-             <input type="email" name="email">
-					</label>
-         	<label for="message">Текст письма:</label>
-         	  <textarea id="message">
-         	    В свободной форме
-					  </textarea>
-         	  <input type="submit" name="message" value="отправить">
-         </form>
-			 </div>
+				<div class="popup">             
+     		   <form class="write-us" action="#" method="get">
+      	     <label>Ваше имя:
+     		       <input type="text" name="name">
+						</label>
+      	     <label>Ваш e-mail:
+      	       <input type="email" name="email">
+						</label>
+       	  	<label for="message">Текст письма:</label>
+       	  	  <textarea id="message">
+       		  	    В свободной форме
+						  </textarea>
+       	  	  <input type="submit" name="message" value="отправить">
+       	  </form>
+			</div>
     </body>
   </html>
   
