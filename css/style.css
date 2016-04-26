@@ -1,4 +1,7 @@
 body {
+	max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: normal;
@@ -26,12 +29,12 @@ h3 {
 
 .container {
 	width: 880px;
-	background-color: mediumaquamarine;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 20px 0;
+	margin: 0 auto;
+	
+	padding: 20px 0;    
 }
-.logo-item {
+
+.logo {
 	float: left;
 }
 
@@ -49,39 +52,136 @@ h3 {
 }
 
 .slider-inner {
-	display: block;
-	outline-color: brown;
-	outline-style: dashed;
-	outline-width: 1px;
-	
+	float: left;
+	outline: 1px solid black;
+	width: 100%;	
 }
 
 .slider {
-	display: inline-block;
 	width: 360px;
 	min-height: 195px;
 	margin-top: 100px;
-	background-color: antiquewhite;
 }
 
 .slide-1 {
 
 }
 
-image-slide-1 {
-	width: 340px;
-	height: 233px;
-	background-color: #eeeeee;
-	background-image: url("img/")
-}
 
 
 .clearfix::after {
 	content: '';
-	display: none;
+	display: table;
 	clear: both;
 }
 
+.block-content {
+  width: 240px;
+  min-height: 300px;
+  margin-bottom: 80px;
+}
+
+.website {
+  float: left;
+  margin-right: 80px;
+}
+
+.apps {
+  float: left;
+  margin-right: 80px;
+}
+
+.presentation {
+  float: right;
+}
+
+.services {
+  border-bottom: 1px solid #eeeeee;  
+}
+
+.about {
+  width: 100%;
+  min-height: 400px;
+  margin-top: 60px;
+  border-bottom: 1px solid #eee;
+}
+
+.about-left {
+  float: left;
+  width: 571px;
+  height: 330px;
+  margin-top: 0;
+}
+
+.about-left h2 {
+  margin-top: 15px;
+}
+
+.about-right {
+  float: right;
+  width: 230px;
+  height: 340px;
+}
+
+.about-right .logo-2 {
+  display: block;
+  padding-left: 32px;
+}
+
+.about-right .since-2004 {
+  font-size: 16px;
+  font-weight: bold;  
+  text-align: center;
+}
+
+.about-right li {
+  list-style: none;
+}
+
+.partners {
+  width: 100%;
+  height: 168px;
+  border-bottom: 1px solid #eee;
+}
+
+.partners .glukhanko {
+  display: block;
+  float: left;
+  width: 198px;
+  height: 37px;
+  margin-left: 13px;
+  margin-top: 68px;
+  background-image: url(../img/logo-glukhanklo.png);
+}
+
+.partners .htmlacademy {
+  display: block;
+  float: left;
+  width: 199px;
+  height: 68px;
+  margin-left: 121px;
+  margin-top: 55px;
+  background-image: url(../img/logo-htmlacademy2.png);
+}
+
+.partners .borodinski {
+  display: block;
+  float: left;
+  width: 209px;
+  height: 86px;
+  margin-left: 124px;
+  margin-top: 46px;
+  background-image: url(../img/logo-borodinski.png);
+}
+
+.maps {
+  width: 1200px;
+  height: 416px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image:  url(../img/maps-1199-416.jpg);
+  
+}
 
 
 
