@@ -142,6 +142,7 @@ h3 {
   width: 100%;
   height: 168px;
   border-bottom: 1px solid #eee;
+  margin-bottom: 87px;
 }
 
 .partners .glukhanko {
@@ -179,9 +180,116 @@ h3 {
   height: 416px;
   margin-left: auto;
   margin-right: auto;
-  background-image:  url(../img/maps-1199-416.jpg);
+  background-image:  url(../img/maps-1.jpg);
+    background-repeat: no-repeat;
   
 }
+
+.adress {
+  width: 250px;
+  height: 216px;
+  margin-left: 0;
+  margin-top: 88px;
+  background-color: #fff;
+}
+
+.adress h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.adress p {
+  color: #8f8f8f;
+}
+
+.footer {
+  width: 880px;
+  height: 215px;
+  background-color: antiquewhite;
+}
+
+.footer .social-block-left {
+  float: left;
+}
+  
+.footer .social-block-right {
+  float: right;
+}  
+
+.popup {
+  display: none;
+  width: 630px;
+  height: 416px;
+  position: absolute;
+  left: 275px;
+  top: 1200px;
+  background-color: brown;
+}
+  
+.slider {
+    position: relative;
+}
+
+.slider input[type=radio] {
+    display: none;
+}
+
+.slider-inner {
+    overflow: hidden;
+}
+
+.slider-slides{
+    width: 300%;
+    transition: transform .8s ease;
+}
+
+.slider-slides img {
+    float: left;
+    width: 450px;
+    height: 320px;    
+}
+
+.slider-controls {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -40px;
+    z-index: 100;
+    text-align: center;
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    background: #ccc;
+    cursor: pointer;   
+    border: 4px solid white;
+    border-radius: 50%;    
+    box-shadow: 0px 0px 2px rgba(0,0,0,.8);     
+    transition: background-color .2s;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background-color: #666;
+}
+
+#btn-1:checked ~ .slider-inner .slider-slides { 
+    transform: translate(0);
+}
+
+#btn-2:checked ~ .slider-inner .slider-slides { 
+    transform: translate(-450px);
+}
+
+#btn-3:checked ~ .slider-inner .slider-slides { 
+    transform: translate(-900px);
+}
+
+
 
 
 
