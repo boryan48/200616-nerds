@@ -3,33 +3,33 @@
     <head>
       <meta charset="utf-8">
       <title>Средства для ухода</title>
+      <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+      <link href="css/normalize.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-      <header class="main-header clearfix">
-        <div class="container">
+      <header class="main-header">
+        <div class="container clearfix">
           <div class="logo">
-         		<a class="logo-item" href="#"><img src="img/logo.png" width="139" height="56"   alt="Nerd"></a>
+         		<a class="logo-item" href="index.html"><img src="img/logo.png" width="139" height="56"   alt="Nerds"></a>
          	</div>
          
           <nav class="main-navigation">
             <ul>
-              <li>
+              <li class="active">
                 <a href="#">Студия</a>
               </li>
               <li>
                 <a href="#">Клиенты</a>
               </li>
               <li>
-                <a href="#">Магазин</a>
+                <a href="catalog.html">Магазин</a>
               </li>
               <li>
                 <a href="#">Контакты</a>
               </li>
-              <li>
-                <a href="#">Корзина</a>     
-              </li>
-            </ul>
+            </ul>  
+            <a class="basket" href="#">Корзина</a>     
           </nav>
     
 		        
@@ -47,38 +47,39 @@
                   <div class="slider-slides">
                     <div class="slide slider-1">
                       <div class="sl-1">
-          	            <h2>Долго, дорого, скрупулёзно.</h2>
+          	            <h2>Долго, дорого, скрупулезно.</h2>
           	              <p>
-          	  	            Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
+          	  	            Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.
           	              </p>
-          	            <a href="#">Узнать больше</a>
+          	            
                       </div>
-                      <img src="img/slider-1.png" width="338" height="231">
+                      <div class="img-1"></div>
 						        </div>
                     
                     
                     <div class="slide slider-2">
                       <div class="sl-2">
-          	          <h2>Любите ли вы математику, как любим её мы?</h2>
+          	          <h2>Любите ли вы математику, как любим ее мы?</h2>
           	          <p>
-          	  	        Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, что бы дать им возможность всё просчитать
+          	  	        Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность всё просчитать
           	          </p>
-          	          <a href="#">Узнать больше</a>
+          	          
                       </div>
-                      <img src="img/slider-2.png" width="230" height="249">
+                      <div class="img-2"></div>
                     </div>
                     
                     <div class="slide slider-3">
                       <div class="sl-3">
-          	          <h2>Только наркотики,<br> только хордкор!</h2>
-          	          <p>
-          	          	Все дизайнерские решения в нашей компании принимаются только под действием качественных галлюциногенов
-          	          </p>
-          	          <a href="#">Узнать больше</a>
+          	            <h2>Только наркотики,<br> только хардкор!</h2>
+          	            <p>
+          	          	  Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов
+          	            </p>
                       </div>
-                      <img src="img/slider-3.png" width="333" height="319">
+                      <div class="img-3"></div>
                     </div>
-                  </div>                        
+                  </div> 
+    
+                  <a class="btn-slider" href="#">Узнать больше</a>                       
                 </div>
           </div>
             
@@ -95,7 +96,7 @@
 		  				<p>
 		  				  Мир никогда не будет прежним после того как увидит ваш сайт! 
 		  				</p>
-	  				  <a class="btn-websites" href="#">Заказать</a>
+	  				  <a class="btn btn-websites" href="#">Заказать</a>
 		  			</div>
 		  			
 		  			<div class="block-content apps">
@@ -104,9 +105,9 @@
 		  				  Приложения
 		  				</h3>
 		  				<p>
-		  				  Покорите топ-10 приложений в AppStore и Google Play
+		  				  Покорите топ-10 приложений<br> в AppStore и Google Play
 		  				</p>
-	  				  <a class="btn-apps" href="#">Заказать</a>
+	  				  <a class="btn btn-apps" href="#">Заказать</a>
 		  			</div>
 		  			
 		  			<div class="block-content presentation">
@@ -117,7 +118,7 @@
 		  				<p>
 		  				  Вы даже не подозреваете насколько вы изумительны! 
 		  				</p>
-	  				  <a class="btn-presentation" href="#">Заказать</a>
+	  				  <a class="btn btn-presentation" href="#">Заказать</a>
 		  			</div>
 		  		</div>
 		  		
@@ -177,19 +178,21 @@
 		 		
 		    <div class="maps">
 		      <div class="container">		
-		        <div class="adress">                  
-		  		    <h1>
-		  		    Nerds design studio
-		  		    </h1>
-		  		    <p>
-		  			  191186, Санкт-Петербург,<br>
-		  		    ул, Б.Конюшенная, д.19/8
-		  		    </p>
-		  		    <p>
-		  			  тел. +7 (812) 275-75-75
-		  		    </p>
-		  		    <a href="mail@htmlacademy.ru">Напишите нам</a>
-		  		  </div>          		  		
+		        <div class="adress-container">
+		          <div class="adress">                  
+		  		      <h1>
+		  		      Nerds design studio
+		  		      </h1>
+		  		      <p>
+		  			    191186, Санкт-Петербург,<br>
+		  		      ул, Б. Конюшенная, д.19/8
+		  		      </p>
+		  		      <p>
+		  			    тел. +7 (812) 275-75-75
+                </p>
+		  		    </div>
+              <a class="form-popup" href="#">Напишите нам</a>
+            </div>          		  		
           </div>
 				</div>
 		  	
@@ -232,6 +235,10 @@
        	  <input type="submit" name="message" value="отправить">
        	</form>
 		  </div>
+		  
+		  
+		  
     </body>
+    <div class="overlay"></div>
   </html>
   

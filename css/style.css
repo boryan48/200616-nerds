@@ -1,16 +1,35 @@
+
+html {
+  font-family: sans-serif;
+  background: #000;
+}
+
 body {
+  position: relative;
+  z-index: 10;
 	max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: normal;
+  background: #fff;
 	color: black;
 	font-family: "Roboto Medium", Arial, sans-serif;
 }
 
 .main-header {
+  height: 429px;
   background-color: #eeeeee;
+  padding-top: 7px;
+  margin-bottom: 60px;
+}
+
+.main-header-catalog {
+  height: 328px;
+  background-color: #eeeeee;
+  padding-top: 7px;
+  margin-bottom: 60px;
 }
 
 h1 {
@@ -21,14 +40,17 @@ h1 {
 
 h2 {
 	font-size: 36px;
-	font-weight: normal;
 	line-height: 36px;
+  font-weight: 300;
+  margin-bottom: 17px;
 }
 
-h3 {
+.block-content h3 {
 	font-size: 18px;
-	font-weight: normal;
-	line-height: 30px;
+	line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  font-weight: normal;
 }
 
 .container {
@@ -39,102 +61,136 @@ h3 {
 
 .logo {
 	float: left;
+  margin-left: 1px;
 }
 
 .main-navigation {
 	float: left;
-	width: 560px;	
-	margin-top: 15px;
+	min-width: 560px;	
+	margin-top: 26px;
 	margin-left: 180px;
-	margin-bottom: 20px
 }
 
 .main-navigation li {
-	display: inline;
-	margin-right: 45px;
+	display: inline-block;
+  min-width: 57px;
+	margin-right: 40px;
 }
 
-.slider-inner {
-	float: left;
-	outline: 1px solid black;
-	width: 100%;	
+.main-navigation a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+  }
+
+.main-navigation ul {
+  float: left;
+  width: 440px;
+  margin-top: 1px;
+  margin-left: 2px;
+  padding: 0;
+  list-style: none;
 }
 
-.slider {
-	width: 360px;
-	min-height: 195px;
-	margin-top: 100px;
+.main-navigation .active {
+  border-bottom: 2px solid red;
 }
 
-.slide-1 {
-
+.main-navigation a:hover {
+  color: #f87478;
 }
 
+.main-navigation a:active {
+  color: #a1a1a1;
+}
 
+.main-navigation .basket {
+  float: right;
+  position: relative;
+  left: -1px;
+  top: 1px;
+  display: inline-block;
+  width: 95px;
+  text-align: right;
+}
 
-.clearfix::after {
-	content: '';
-	display: table;
-	clear: both;
+.basket::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  
+  width: 20px;
+  height: 17px;
+  
+  background: #f87478;
 }
 
 .block-content {
+  position: relative;
   width: 240px;
   min-height: 300px;
   margin-bottom: 80px;
 }
 
-.website {
+.services .website {
   float: left;
   margin-right: 80px;
 }
 
-.apps {
+.services .apps {
   float: left;
   margin-right: 80px;
 }
 
-.presentation {
+.services .presentation {
   float: right;
 }
 
 .services {
-  border-bottom: 1px solid #eeeeee;  
+  border-bottom: 1px solid #eeeeee;
 }
 
 .about {
   width: 100%;
   min-height: 400px;
-  margin-top: 60px;
-  border-bottom: 1px solid #eee;
+  margin-top: 59px;
+  padding-bottom: 13px;
+  border-bottom: 2px solid #eee;
 }
 
 .about-left {
   float: left;
-  width: 571px;
+  width: 591px;
   height: 330px;
   margin-top: 0;
 }
 
 .about-left h2 {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .about-right {
   float: right;
   width: 230px;
-  height: 340px;
+  min-height: 340px;
+  margin-right: 10px;
 }
 
 .about-right .logo-2 {
   display: block;
-  padding-left: 32px;
+  padding-left: 31px;
+  margin-bottom: 20px;
 }
 
 .about-right .since-2004 {
-  font-size: 16px;
-  font-weight: bold;  
-  text-align: center;
+  font-size: 16px;  
+  text-transform: uppercase;
+  margin-bottom: 66px;
+  padding-left: 80px;
 }
 
 .about-right li {
@@ -143,9 +199,9 @@ h3 {
 
 .partners {
   width: 100%;
-  height: 168px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 87px;
+  height: 167px;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 64px;
 }
 
 .partners .glukhanko {
@@ -153,9 +209,10 @@ h3 {
   float: left;
   width: 198px;
   height: 37px;
-  margin-left: 13px;
-  margin-top: 68px;
+  margin-left: 12px;
+  margin-top: 67px;
   background-image: url(../img/logo-glukhanklo.png);
+  opacity: .2;
 }
 
 .partners .htmlacademy {
@@ -163,9 +220,10 @@ h3 {
   float: left;
   width: 199px;
   height: 68px;
-  margin-left: 121px;
+  margin-left: 120px;
   margin-top: 55px;
   background-image: url(../img/logo-htmlacademy2.png);
+  opacity: .2;
 }
 
 .partners .borodinski {
@@ -173,9 +231,14 @@ h3 {
   float: left;
   width: 209px;
   height: 86px;
-  margin-left: 124px;
-  margin-top: 46px;
+  margin-left: 123px;
+  margin-top: 45px;
   background-image: url(../img/logo-borodinski.png);
+  opacity: .2;
+}
+
+.partners a:hover{
+  opacity: 1;
 }
 
 .maps {
@@ -183,41 +246,53 @@ h3 {
   height: 416px;
   margin-left: auto;
   margin-right: auto;
-  background-image:  url(../img/maps-1.jpg);
+  background-image: url(/img/maps-1.jpg);
   background-repeat: no-repeat;  
 }
   
-.adress {
-  width: 250px;
-  height: 216px;
+.adress-container {
+  width: 229px;
+  height: 213px;
   margin-left: 0;
-  margin-top: 88px;
+  margin-top: 69px;
   background-color: #fff;
+  padding-top: 26px;
+  padding-left: 21px
 }
- /* В общем так  не понял к чему popup подвязать, при relative поток его видит, а при absolute, при расширении браузера, окно уходит влево, засада */
+ 
 .popup { 
+  position: fixed;
+  left: 50%;
+  right:50%;
+  top: 25%;
+  margin-left: -315px;
+  margin-right: -208px;
+  z-index: 100;
   display: none;
-  position: absolute;
   width: 630px;
   height: 416px;
-  left: 115px;
-  top: 1590px;
-  background-color: #666;
+  background-color: #fff;
+  box-shadow: 0 0 80px 0 #666;
 }
 
 .adress h1 {
   font-size: 16px;
-  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-top: 0px;
 }
 
 .adress p {
   color: #8f8f8f;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .footer {
   width: 880px;
   height: 215px;
-  background-color: antiquewhite;
 }
 
 .footer .social-block-left {
@@ -226,8 +301,61 @@ h3 {
   
 .footer .social-block-right {
   float: right;
+  margin-right: 22px;
 }
            /*Слайдер начало*/
+.slider-inner {
+	float: left;
+	width: 100%;	
+}
+
+.slider {
+  position: relative;
+	width: 360px;
+	min-height: 200px;
+	margin-top: 100px;
+}
+
+.slider p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  color: #283136;
+}
+
+.btn-slider {
+  display: inline-block;
+  position: absolute;
+  top: 191px;
+  left: 0px;
+  width: 240px;
+  height: 30px;
+  text-align: center;
+  padding-top: 8px;
+  background: #fb565a;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.sl-2 p {
+  display: block;
+  width: 460px;
+}
+
+.sl-3 p {
+  display: block;
+  width: 490px;
+}
+
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
 .slider {
   position: relative;
   width: 880px;
@@ -253,68 +381,47 @@ h3 {
   float: left;
 }
 
- .sl-1 {
-  width: 360px;
-  float: left;
+ .slider .sl-1 {
+  width: 390px;
+  float: left; 
 }
 
-.sl-2 {
-  width: 470px;
+.slider .sl-2 {
+  width: 490px;
   float:left;
 }
 
-.sl-3 {
+.slider .sl-3 {
   width: 470px;
   float: left;
-}
-
-
-.slide img {
-  float: right;
-}
-
-.slider-1 img {
-  
-  width: 340px;
-  height: 255px;   
-}
-
-.slide-2 img {
-  width: 230px;
-  height: 250px;   
-}
-
-.slide-3 img {
-  width: 330px;
-  height: 310px;   
 }
 
 .slider-controls {
   position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 94px;
-  z-index: 100;
+  z-index: 50;
+  width: 70px;
+  left: 398px;
+  bottom: 79px;
   text-align: center;
 }
 
 .slider-controls label {
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 0 3px;
-  background: #ccc;
+  width: 4px;
+  height: 4px;
+  margin-right: 5px;
+  background: #fff;
   cursor: pointer;   
-  border: 4px solid white;
+  border: 3px solid #fff;
   border-radius: 50%;    
-  box-shadow: 0px 0px 2px rgba(0,0,0,.8);     
+       
   transition: background-color .2s;
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-  background-color: #666;
+  background-color: #c1c1c1;
 }
 
 #btn-1:checked ~ .slider-inner .slider-slides { 
@@ -328,9 +435,100 @@ h3 {
 #btn-3:checked ~ .slider-inner .slider-slides { 
   transform: translate(-1760px);
 }
+
+.slide h2 {
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+
+.slider .img-1 {
+  position: absolute;
+  left: 542px;
+  top: 9px;
+  float: right;
+  width: 338px;
+  height: 231px;
+  background-image: url("/img/slider-1.png");
+}
+.slider .img-2 {
+  position: absolute;
+  left: 1520px;
+  top: 13px;
+  float: right;
+  width: 230px;
+  height: 249px;
+  background-image: url("/img/slider-2.png");
+}
+.slider .img-3 {
+  position: absolute;
+  right: 6px;
+  top: -10px;
+  float: right;
+  width: 333px;
+  height: 319px;
+  background-image: url("/img/slider-3.png");
+}
+
           /*слайдер конец*/
 
+.block-content p {
+  font-size: 15px;
+  line-height: 22px;
+  color: #283136;
+}
 
+.block-content .btn {
+  position: absolute;
+  display: inline-block;
+  width: 140px;
+  height: 20px;
+  bottom: 1px;
+  left: 0px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.block-content .btn-websites {
+  background: #fb565a;
+}
+
+.block-content .btn-apps {
+  background: #00ca74;
+}
+
+.block-content .btn-presentation {
+  background: #efc84a;
+}
+
+.about-left p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+  margin-bottom: 44px;
+}
+
+.about h3 {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.about ul {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 23px;
+}
+
+.about li {
+  margin-bottom: 22px;
+}
           /*Каталог*/
  
 .main-header h1 {
@@ -387,18 +585,81 @@ h3 {
   height: 10px;
   border-radius: 50%;
   background-color: #fff;
+  
+}
+
+.overlay {
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+
+.popup .submit .overlay:hover {
+  display: block;
 }
 
 
 
+.form-popup .popup:hover {
+  display: block;
+}
+
+
+.maps .adress {
+  width: 210px;
+  min-height: 120px;
+}
+
+.maps .form-popup {
+  display: inline-block;
+  width: 204px;
+  height:  30px;
+  padding-top: 8px;
+  margin-left: 2px;
+  margin-top: 8px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 12px;
+  color: #eee;
+  background: #fb565a;
+  border-radius: 3px;
+}
 
 
 
+.social-btn {
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: #e1e1e1;
+  margin-right: 24px;
+  margin-top: 56px;
+  text-decoration: none;
+  font-size: 0;  
+}
 
 
 
+.footer h2 {
+  margin-top: 55px;
+  margin-bottom: 0;
+  
+}
+
+.footer p {
+  margin-top: 10px;
+}
 
 
 
-
-
+.main-header-catalog h1 {
+  text-align: center;
+}
