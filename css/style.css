@@ -1,18 +1,14 @@
-
-html {
-  font-family: sans-serif;
-  background: #000;
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
 }
 
 body {
   position: relative;
-  z-index: 10;
-	max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 	font-size: 16px;
 	line-height: 22px;
-	font-weight: normal;
+	font-weight: 400;
   background: #fff;
 	color: black;
 	font-family: "Roboto Medium", Arial, sans-serif;
@@ -34,7 +30,7 @@ body {
 
 h1 {
 	font-size: 40px;
-	font-weight: normal;
+	font-weight: 400;
 	line-height: normal;
 }
 
@@ -198,15 +194,14 @@ h2 {
 }
 
 .partners {
+  
   width: 100%;
-  height: 167px;
+  min-height: 167px;
   border-bottom: 2px solid #eee;
   margin-bottom: 64px;
 }
 
 .partners .glukhanko {
-  display: block;
-  float: left;
   width: 198px;
   height: 37px;
   margin-left: 12px;
@@ -216,8 +211,6 @@ h2 {
 }
 
 .partners .htmlacademy {
-  display: block;
-  float: left;
   width: 199px;
   height: 68px;
   margin-left: 120px;
@@ -227,8 +220,6 @@ h2 {
 }
 
 .partners .borodinski {
-  display: block;
-  float: left;
   width: 209px;
   height: 86px;
   margin-left: 123px;
@@ -348,12 +339,6 @@ h2 {
 .sl-3 p {
   display: block;
   width: 490px;
-}
-
-.clearfix::after {
-	content: '';
-	display: table;
-	clear: both;
 }
 
 .slider {
@@ -662,4 +647,9 @@ h2 {
 
 .main-header-catalog h1 {
   text-align: center;
+}
+
+.partners a{
+  display: inline-block;
+  vertical-align: top;
 }
