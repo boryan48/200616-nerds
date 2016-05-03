@@ -32,7 +32,6 @@ body {
 .main-header-catalog {
   height: 328px;
   background-color: #eeeeee;
-  padding-top: 7px;
   margin-bottom: 60px;
 }
 
@@ -264,15 +263,15 @@ h2 {
   position: fixed;
   left: 50%;
   right:50%;
-  top: 25%;
-  margin-left: -315px;
+  top: 190px;
+  margin-left: -325px;
   margin-right: -208px;
   z-index: 100;
   display: none;
   width: 630px;
   height: 416px;
   background-color: #fff;
-  box-shadow: 0 0 80px 0 #666;
+  box-shadow: 0 30px 50px 0 #666;
 }
 
 .adress-container h1 {
@@ -721,4 +720,88 @@ h2 {
 .main-footer .social-btn-inst {
   background: #e1e1e1 url("../img/spritesheet.png") no-repeat;
   background-position: -47px -1px;
+}
+
+.popup input {
+  width: 195px;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  margin-top: 8px;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+
+.popup .write-us {
+  margin-left: 80px;
+  margin-top: 52px;
+  margin-right: 96px;
+  
+}
+
+.popup .btn-close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 41px;
+  height: 41px;
+  font-size: 0;
+  background-color: #fb565a;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.cross-btn {
+  position: absolute;
+  z-index: 110;
+  top: 8px;
+  right: 8px;
+  width: 25px;
+  height: 25px;
+  transform: rotate(45deg)
+  
+}
+
+.popup .cross-1 {
+  position: absolute;
+  top: 10px;
+  width: 25px;
+  height: 5px;
+  background: #fff;
+}
+
+.popup .cross-2 {
+  position: absolute;
+  top: 10px;
+  width: 25px;
+  height: 5px;
+  transform: rotate(90deg);
+  background: #fff;
+}
+
+
+
+.popup label {
+  float: left;
+  width: 220px;
+}
+
+.popup .message {
+  width: 460;
+  height: 140px;
+}
+
+.popup .message-1 {
+  width: 454px;
+  height: 140px;
+}
+
+.main-header-catalog h1 {
+  display: inline-block;
+  text-transform: uppercase;
 }
