@@ -30,9 +30,8 @@ body {
 }
 
 .main-header-catalog {
-  height: 328px;
   background-color: #eeeeee;
-  margin-bottom: 60px;
+  margin-bottom: 77px;
 }
 
 h1 {
@@ -525,8 +524,6 @@ h2 {
 .filter {
   float: left;
   width: 240px;
-  min-height: 733px;
-  margin-top: 80px;
 }
 
 .filter legend {
@@ -536,7 +533,6 @@ h2 {
 .sort {
   width: 560px;
   float: right;
-  margin-top: 80px;
 }
 
 .sort-price {
@@ -549,25 +545,27 @@ h2 {
 
 .sort .column-1 {
   float: left;
-  margin-bottom: 80px;
+  margin-bottom: 74px;
 }
 
 .sort .column-2 {
   float: right;
-  margin-bottom: 80px;
+  margin-bottom: 74px;
 }
 
 .block-top {
-  width: 239px;
+  width: 234px;
   height: 30px;
   background-color: #f1f1f1;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  padding-left: 6px;
 }
 
-.block-top  div {
+.block-top > div {
   display: inline-block;
-  margin: 10px 3px 10px 10px;
+  margin-left: 7px;
+  margin-top: 9px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -640,6 +638,11 @@ h2 {
 
 .main-header-catalog h1 {
   text-align: center;
+  display: inline-block;
+  margin-left: 108px; 
+  margin-top: 19px;
+  margin-bottom: 84px;
+  text-transform: uppercase;
 }
 
 .partners a{
@@ -828,10 +831,58 @@ h2 {
   height: 140px;
 }
 
-.main-header-catalog h1 {
-  display: inline-block;
+
+
+
+
+
+
+
+.sort .sort-left {
   text-transform: uppercase;
+  font-weight: 700;
+  margin-right: 35px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort  a {
+  margin-right: 41px;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px dotted #00ca74;
+  color: #b2b2b2;
+}
+
+.sort .sort-btn {
+  position: relative;
+  display: inline-block;
+  width: 27px;
+  height: 10px;
+  margin-left: 43px;
+}
+
+.sort-btn  a {
+  font-size: 0;
+  margin: 0;
 }
 
 
 
+.sort .btn-down:after {
+  content: ''; 
+  position: absolute; /* Абсолютное позиционирование */
+  left: 32px; bottom: -6px; /* Положение треугольника */
+  border: 5px solid transparent; /* Прозрачные границы */
+  border-bottom: 10px solid #c1c1c1; /* Добавляем треугольник */
+}
+
+.sort .btn-up:after {
+  content: ''; 
+  position: absolute; /* Абсолютное позиционирование */
+  left: 14px; bottom: -12px; /* Положение треугольника */
+  border: 6px solid transparent; /* Прозрачные границы */
+  border-top: 10px solid #00ca74; /* Добавляем треугольник */
+}
