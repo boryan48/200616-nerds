@@ -51,7 +51,7 @@ h2 {
 	font-size: 18px;
 	line-height: 28px;
   text-transform: uppercase;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-weight: normal;
 }
 
@@ -546,17 +546,30 @@ h2 {
 }
 
 .sort .block-hide {
-  display: none;
+  position: absolute;
+  width: 180px;
+  top: 0;
+  left: 0;
+  height: 169px;
+  margin-top: 49px;
+  margin-left: 20px;
+  padding-top: 32px;
+  padding-left: 11px;
+  padding-right: 10px;
+  text-align: center;
+  z-index: 10;
+  display: non;
+  background: #fff;
 }
 
 .sort .column-1 {
   float: left;
-  margin-bottom: 73px;
+  margin-bottom: 74px;
 }
 
 .sort .column-2 {
   float: right;
-  margin-bottom: 73px;
+  margin-bottom: 74px;
 }
 
 .block-top {
@@ -860,6 +873,7 @@ h2 {
   text-decoration: none;
   border-bottom: 1px dotted #00ca74;
   color: #b2b2b2;
+  border-radius: 3px;
 }
 
 .sort .sort-btn {
@@ -1030,4 +1044,83 @@ h2 {
   background: #c09b24;
   border: 3px solid #c09b24;
   border-top: 3px solid #a3841f;
+}
+
+.sort .block-aviator {
+  position: relative;
+}
+
+.sort .block-sunset {
+  position: relative;
+}
+
+.sort .block-forte {
+  position: relative;
+}
+
+.sort .block-modern {
+  position: relative;
+}
+
+.sort .block-avenue {
+  position: relative;
+}
+
+.sort .block-dovetail {
+  position: relative;
+}
+
+.block-hide h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.block-hide p {
+  display: inline-block;
+  width: 170px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  
+  
+}
+
+.block-hide a {
+  position: absolute;
+  bottom: 29px;
+  left: 30px;
+  display: inline-block;
+  width: 140px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background: #fb565a;
+  color: #eee;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin: 0 auto;
+  margin-bottom: 0;
+  border: 3px solid #fb565a;
+  
+}
+
+.block-hide .modern-h3 > a {
+  
+  margin-bottom: 0px;
+}
+
+.block-hide a:hover {
+  background: #d6494d;
+  color: #eee;
+  border: 3px solid #d6494d;
+}
+
+.block-hide a:active {
+  background: #b63538;
+  color: #eee;
+  border: 3px solid #b63538;
+  border-top: 3px solid #9b2d30;
 }
