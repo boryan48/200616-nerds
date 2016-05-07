@@ -47,6 +47,11 @@ h2 {
   margin-bottom: 17px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .block-content h3 {
 	font-size: 18px;
 	line-height: 28px;
@@ -87,7 +92,8 @@ h2 {
   margin-right: 62px;
 }
 
-.main-navigation a {
+.main-navigation a,
+.main-navigation span{
   color: black;
   text-decoration: none;
   text-transform: uppercase;
@@ -113,6 +119,7 @@ h2 {
   left: -1px;
   top: 1px;
   display: inline-block;
+  vertical-align: top;
   width: 95px;
   text-align: right;
 }
@@ -262,8 +269,8 @@ h2 {
   top: 190px;
   margin-left: -325px;
   margin-right: -208px;
-  z-index: 100;
-  display: none;
+  z-index: 20;
+  display: one;
   width: 630px;
   height: 416px;
   background-color: #fff;
@@ -321,6 +328,7 @@ h2 {
 
 .btn-slider {
   display: inline-block;
+  vertical-align: top;
   position: absolute;
   top: 191px;
   left: 0px;
@@ -361,7 +369,10 @@ h2 {
 
 .slider-slides{
   width: 300%;
+  -webkit-transition: -webkit-transform .0s ease;
+  transition: -webkit-transform .0s ease;
   transition: transform .0s ease;
+  transition: transform .0s ease, -webkit-transform .0s ease;
 }
 
 .slide {
@@ -396,6 +407,7 @@ h2 {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 4px;
   height: 4px;
   margin-right: 5px;
@@ -403,6 +415,8 @@ h2 {
   cursor: pointer;   
   border: 3px solid #fff;
   border-radius: 50%;    
+       
+  -webkit-transition: background-color .2s;    
        
   transition: background-color .2s;
 }
@@ -414,15 +428,18 @@ h2 {
 }
 
 #btn-1:checked ~ .slider-inner .slider-slides { 
-  transform: translate(0);
+  -webkit-transform: translate(0); 
+          transform: translate(0);
 }
 
 #btn-2:checked ~ .slider-inner .slider-slides { 
-  transform: translate(-880px);
+  -webkit-transform: translate(-880px); 
+          transform: translate(-880px);
 }
 
 #btn-3:checked ~ .slider-inner .slider-slides { 
-  transform: translate(-1760px);
+  -webkit-transform: translate(-1760px); 
+          transform: translate(-1760px);
 }
 
 .slide h2 {
@@ -469,6 +486,7 @@ h2 {
 .block-content .btn {
   position: absolute;
   display: inline-block;
+  vertical-align: top;
   width: 134px;
   height: 20px;
   bottom: 1px;
@@ -583,6 +601,7 @@ h2 {
 
 .block-top > div {
   display: inline-block;
+  vertical-align: top;
   margin-left: 7px;
   margin-top: 10px;
   width: 10px;
@@ -594,13 +613,13 @@ h2 {
 
 .overlay {
   background-color: rgba(0,0,0,.5);
-  position: absolute;
+  position: fixed;
   display: none;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 50;
+  z-index: 10;
 }
 
 .popup .submit .overlay:hover {
@@ -621,6 +640,7 @@ h2 {
 
 .maps .form-popup {
   display: inline-block;
+  vertical-align: top;
   width: 204px;
   height: 30px;
   padding-top: 9px;
@@ -658,6 +678,7 @@ h2 {
 .main-header-catalog h1 {
   text-align: center;
   display: inline-block;
+  vertical-align: top;
   margin-left: 108px; 
   margin-top: 19px;
   margin-bottom: 84px;
@@ -712,6 +733,7 @@ h2 {
 
 .main-footer .social-btn {
   display: inline-block;
+  vertical-align: top;
   width: 31px;
   height: 31px;
   border: 15px solid #e1e1e1;
@@ -801,6 +823,7 @@ h2 {
   width: 41px;
   height: 41px;
   font-size: 0;
+  border: 0;
   background-color: #fb565a;
   border-radius: 50%;
   cursor: pointer;
@@ -814,7 +837,8 @@ h2 {
   right: 8px;
   width: 25px;
   height: 25px;
-  transform: rotate(45deg)
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg)
   
 }
 
@@ -831,7 +855,8 @@ h2 {
   top: 10px;
   width: 25px;
   height: 5px;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   background: #fff;
 }
 
@@ -879,6 +904,7 @@ h2 {
 .sort .sort-btn {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   width: 27px;
   height: 10px;
   margin-left: 43px;
@@ -1081,6 +1107,7 @@ h2 {
 
 .block-hide p {
   display: inline-block;
+  vertical-align: top;
   width: 170px;
   margin: 0;
   font-size: 14px;
@@ -1094,6 +1121,7 @@ h2 {
   bottom: 29px;
   left: 30px;
   display: inline-block;
+  vertical-align: top;
   width: 140px;
   font-size: 18px;
   text-transform: uppercase;
