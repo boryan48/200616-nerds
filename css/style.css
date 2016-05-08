@@ -121,6 +121,7 @@ img {
   display: inline-block;
   vertical-align: top;
   width: 95px;
+  margin-top: -3px;;
   text-align: right;
 }
 
@@ -534,8 +535,15 @@ img {
   width: 240px;
 }
 
-.filter legend {
-  margin-bottom: 20px;
+.filter h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+  resize: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
+  
 }
 
 .sort {
@@ -743,7 +751,7 @@ img {
 .main-footer .social-btn-vk:active {
   border: 15px solid #d6494d;
   background: #d6494d url("../img/spritesheet.png") no-repeat;
-  background-position: -142px -6px;
+  background-position: -142px -6px; 
 }
 
 .main-footer .social-btn-fb:hover {
@@ -783,6 +791,14 @@ img {
   height: 416px;
   background-color: #fff;
   box-shadow: 0 20px 100px 10px white;
+}
+
+.popup h3 {
+  margin: 0;
+  margin-bottom: 9px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
 }
 
 .popup .submit .overlay:hover {
@@ -1181,12 +1197,190 @@ img {
 }
 
 
-.popup h3 {
-  margin: 0;
-  margin-bottom: 9px;
+
+.range-filter {
+  width: 240px;
+  margin: 50px auto;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 20px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+  margin-bottom: 49px;
+}
+
+.price-controls label {
   font-size: 16px;
-  line-height: 18px;
-  font-weight: 700;
+  display: inline-block;
+  width: 50%;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  width: 60px;
+  margin-left: 4px;
+  padding: 8px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #f1f1f1;
 }
 
 
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.filter h4 {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-grid label,
+.filter-features label {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  padding-left: 35px;
+  margin-bottom: 19px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
+  opacity: .8;
+  cursor: pointer;
+}
+
+.filter-grid label:hover,
+.filter-features label:hover {
+  opacity: 1;
+}
+
+.filter-grid input[type="radio"]:before:disabled { 
+  background: red;
+}
+
+.filter-grid input[type=radio],
+.filter-features input[type=checkbox]{
+  position: relative;
+  display: none;
+}
+
+
+
+.filter .filter-grid {
+  margin-bottom: 29px;
+}
+
+
+
+.filter .radio-indicator {
+  position: absolute;
+  left: 1px;
+  top: -1px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 3px solid #c1c1c1;
+  
+}
+
+.filter .radio-indicator:active {
+  position: absolute;
+  left: 1px;
+  top: -1px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 3px solid #e9e9e9;
+}
+
+.filter-grid input[type="radio"]:checked:disabled ~ .radio-indicator:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #b5b5b5;
+}
+
+.filter-grid input:checked {
+  
+  background: #e9e9e9;
+}
+
+.filter-features .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #c1c1c1;
+  border-radius: 5px;
+}
+
+.filter-features input[type="checked"]:checked + .checked-indicator:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  background: #c1c1c1;

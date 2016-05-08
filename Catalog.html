@@ -46,54 +46,57 @@
 			<div class="container clearfix">
 				<form class="filter" action="#"  method="get">
 		      <fieldset>
-			    <legend>
-			    	Стоимость:
-			    </legend>	  
-			    <div class="filter-price">
-            <div class="scale">
-              <div class="toggle min-toggle"></div>
-              <div class="toggle max-toggle"></div>
-          	</div>
-          	<div class="price-controls">
-            	 от <input class="min-price" type="text" value="5 000">
-            	 до <input class="max-price" type="text" value="15 000">
-         	  </div>
-          </div>
+			      <h3>
+			    	  Стоимость:
+			      </h3>	  
+			      <div class="filter-price">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 10%; width: 60%"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+          	  <div class="price-controls">
+                <label class="min-price"><h4>от</h4> <input class="min-price" type="text" value="0"></label>
+                <label class="max-price"><h4>до</h4> <input class="max-price" type="text" value="15000"></label>
+         	    </div>
+            </div>
 					</fieldset>
 					
-					<fieldset>
-					<legend>
+					<fieldset class="filter-grid">
+					<h3>
 						Сетка:
-					</legend>
+					</h3>
 						<label>
-							<input type="radio" name="rad-1" checked>Адаптивная
+							<input type="radio" name="rad-1" checked disabled><span class="radio-indicator"></span>Адаптивная
 						</label>
 						<label>
-							<input type="radio" name="rad-1">Фиксированная
+							<input type="radio" name="rad-1"><span class="radio-indicator"></span>Фиксированная
 						</label>
 						<label>
-							<input type="radio" name="rad-1">Резиновая
+							<input type="radio" name="rad-1"><span class="radio-indicator"></span>Резиновая
 						</label>
 					</fieldset>
 					
-				  <fieldset>
-					<legend>
+				  <fieldset class="filter-features">
+					<h3>
 						Особенности:
-					</legend>
+					</h3>
 						<label>
-							<input type="checkbox" name="slider" checked>Слайдер
+							<input type="checkbox" name="slider" checked><span class="checkbox-indicator"></span>Слайдер
 						</label>
 						<label>
-							<input type="checkbox" name="benefits">Блок преимуществ
+							<input type="checkbox" name="benefits"><span class="checkbox-indicator"></span>Блок преимуществ
 						</label>
 						<label>
-							<input type="checkbox" name="news" checked>Новости
+							<input type="checkbox" name="news" checked><span class="checkbox-indicator"></span>Новости
 						</label>
 						<label>
-							<input type="checkbox" name="galery">Галерея 
+							<input type="checkbox" name="galery"><span class="checkbox-indicator"></span>Галерея 
 						</label>
 						<label>
-							<input type="checkbox" name="basket">Корзина
+							<input type="checkbox" name="basket"><span class="checkbox-indicator"></span>Корзина
 						</label>
 						<input type="submit" name="result" value="показать">
 					</fieldset>
