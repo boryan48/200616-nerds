@@ -261,22 +261,28 @@
 			  </div>      
 			</footer>
 		                     <!--Скрытая форма-->
- 	          <div class="popup">             
-     	        <form class="write-us" action="#" method="get">
-              <label>Ваше имя:
-                <input type="text" name="name">
-		          </label>
-              <label>Ваш e-mail:
-                <input type="email" name="email">
-		          </label>
-              <label for="message">Текст письма:</label>
-                <textarea id="message">
-                  В свободной форме
-		            </textarea>
-              <input type="submit" name="message" value="отправить">
-              </form>
-		        </div>
-	 	  
+ 	    <div class="popup">             
+     	  <form class="write-us" action="#" method="get">
+          <label><h3>Ваше имя:</h3>
+     		    <input type="text" name="name" value="представьтесь, пожалуйста">
+				  </label>
+          <label><h3>Ваш e-mail:</h3>
+      	    <input type="email" name="email" value="для отправки ответа">
+				  </label>
+          <label for="message"><h3>Текст письма:</h3></label>
+       	    <textarea class="message-1" id="message">В свободной форме
+				    </textarea>
+       	  <input type="submit" name="message" value="отправить">
+       	</form>
+       	
+        <button class="btn-close" href="#"  title="Закрыть">
+        <div class="cross-btn">
+          <div class="cross-1"></div>
+          <div class="cross-2"></div>
+        </div>
+          Закрыть
+        </button>
+      </div>
       
     </body>
   </html>

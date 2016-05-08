@@ -261,21 +261,6 @@ img {
   padding-top: 26px;
   padding-left: 21px;
 }
- 
-.popup { 
-  position: fixed;
-  left: 50%;
-  right:50%;
-  top: 190px;
-  margin-left: -325px;
-  margin-right: -208px;
-  z-index: 20;
-  display: one;
-  width: 630px;
-  height: 416px;
-  background-color: #fff;
-  box-shadow: 0 30px 50px 0 #666;
-}
 
 .adress-container h1 {
   font-size: 16px;
@@ -576,7 +561,7 @@ img {
   padding-right: 10px;
   text-align: center;
   z-index: 10;
-  display: non;
+  display: none;
   background: #fff;
 }
 
@@ -619,17 +604,7 @@ img {
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 10;
-}
-
-.popup .submit .overlay:hover {
-  display: block;
-}
-
-
-
-.form-popup .popup:hover {
-  display: block;
+  z-index: 90;
 }
 
 
@@ -795,24 +770,66 @@ img {
   background-position: -107px -11px;
 }
 
-.popup input {
-  width: 195px;
+.popup { 
+  position: fixed;
+  left: 50%;
+  right:50%;
+  top: 190px;
+  margin-left: -325px;
+  margin-right: -208px;
+  z-index: 100;
+  display: none;
+  width: 630px;
+  height: 416px;
+  background-color: #fff;
+  box-shadow: 0 20px 100px 10px white;
+}
+
+.popup .submit .overlay:hover {
+  display: block;
+}
+
+.popup input[type=text],
+.popup input[type=email] {
+  width: 187px;
   font-size: 12px;
   line-height: 18px;
   font-family: "Roboto Medium", "Arial", sans-serif;
   color: #000;
   text-transform: uppercase;
-  padding: 10px 10px;
-  margin-top: 8px;
+  padding: 8px 14px;
+  margin-bottom: 21px;
   border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.popup input[type=text] {
+  margin-right: 21px;
+}
+
+.popup input[type=email] {
+  padding-right: 15px;
+}
+
+.popup input[type=submit] {
+  width: 100%;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  background: #fb565a;
+  padding: 10px 0;
+  color: #eee;
+  text-transform: uppercase;
+  border: 0;
   border-radius: 3px;
 }
 
 
 .popup .write-us {
   margin-left: 80px;
-  margin-top: 52px;
-  margin-right: 96px;
+  margin-top: 54px;
+  margin-right: 90px;
   
 }
 
@@ -862,7 +879,7 @@ img {
 
 .popup label {
   float: left;
-  width: 220px;
+  
 }
 
 .popup .message {
@@ -871,8 +888,18 @@ img {
 }
 
 .popup .message-1 {
-  width: 454px;
-  height: 140px;
+  width: 429px;
+  height: 94px;
+  padding: 8px 14px;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  resize: none;
+  margin-bottom: 42px;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
 }
 
 
@@ -1152,3 +1179,14 @@ img {
   border: 3px solid #b63538;
   border-top: 3px solid #9b2d30;
 }
+
+
+.popup h3 {
+  margin: 0;
+  margin-bottom: 9px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+
