@@ -1,3 +1,4 @@
+"use strict";
 var link = document.querySelector(".form-popup");
 var popup = document.querySelector(".popup");
 var shadow = document.querySelector(".overlay");
