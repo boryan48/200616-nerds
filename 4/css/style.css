@@ -826,10 +826,9 @@ img {
 }
 
 .block-hide p {
-  display: inline-block;
+  display: block;
   vertical-align: top;
-  width: 170px;
-  margin: 0;
+  margin: 10px;
   font-size: 14px;
   line-height: 18px;
 }
