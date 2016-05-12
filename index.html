@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>Средства для ухода</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -36,8 +36,6 @@
           </li>
         </ul>
       </nav>
-
-
 
       <div class="slider">
         <input type="radio" id="btn-1" name="toggle" checked>
@@ -183,7 +181,9 @@
       </div>
     </div>
 
-
+    <div class="map-google">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5979706965595!2d30.318094389720905!3d59.93881299206436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462958377923" allowfullscreen></iframe>
+    </div>
     <div class="maps">
       <div class="container">
         <div class="adress-container">
@@ -199,7 +199,7 @@
             тел. +7 (812) 275-75-75
           </p>
 
-          <a class="form-popup" href="#">Напишите нам</a>
+          <a class="form-popup" href="form.html">Напишите нам</a>
         </div>
       </div>
     </div>
@@ -212,9 +212,9 @@
     <div class="container">
 
       <div class="social-block-left">
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        <a class="social-btn social-btn-vk" href="#1">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#1">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#1">Инстаграм</a>
       </div>
       <div class="social-block-right">
         <h2>
@@ -227,37 +227,38 @@
 
     </div>
   </footer>
+  
   <!--Скрытая форма-->
   <div class="popup">
-    <form class="write-us" action="#" method="get">
-      <label>
-        <h3>Ваше имя:</h3>
-        <input type="text" name="name" value="представьтесь, пожалуйста">
+    <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+      <label for="name">
+        Ваше имя:
       </label>
-      <label>
-        <h3>Ваш e-mail:</h3>
-        <input type="email" name="email" value="для отправки ответа">
+      <label for="email">
+        Ваш e-mail:
       </label>
+        <input id="name" type="text" name="name" placeholder="представьтесь, пожалуйста" autofocus>
+        <input id="email" type="email" name="email" placeholder="для отправки ответа">
       <label for="message">
-        <h3>Текст письма:</h3></label>
-      <textarea class="message-1" id="message">В свободной форме
-      </textarea>
+        Текст письма:
+      </label>
+      <textarea class="message" id="message" placeholder="В свободной форме"></textarea>
       <input type="submit" name="message" value="отправить">
     </form>
 
 
-    <button class="btn-close" href="#" title="Закрыть">
+    <a class="btn-close" href="#" title="Закрыть">
       <div class="cross-btn">
         <div class="cross-1"></div>
         <div class="cross-2"></div>
       </div>
       Закрыть
-    </button>
+    </a>
   </div>
   
   <div class="overlay"></div>
   
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 
 </body>
 

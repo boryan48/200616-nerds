@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>Средства для ухода</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -38,7 +38,7 @@
 
       <h1>
             Добро пожаловать в магазин
-            <div>готовых макетов</div>
+            <span>готовых макетов</span>
           </h1>
     </div>
   </header>
@@ -60,11 +60,11 @@
             </div>
             <div class="price-controls">
               <label class="min-price">
-                <h4>от</h4>
+                <b>от</b>
                 <input class="min-price" type="text" value="0">
               </label>
               <label class="max-price">
-                <h4>до</h4>
+                <b>до</b>
                 <input class="max-price" type="text" value="15000">
               </label>
             </div>
@@ -90,13 +90,13 @@
           <h3>
 						Особенности:
 					</h3>
-          <label>
-            <input type="checkbox" name="slider" checked disabled><span class="checkbox-indicator">Слайдер</span>
+          <label class="disabled">
+            <input class="disabled" type="checkbox" name="slider" checked disabled><span class="checkbox-indicator disabled">Слайдер</span>
           </label>
           <label>
-            <input type="checkbox" name="benefits"><span class="checkbox-indicator">Блок преимуществ</span>
+            <input type="checkbox" name="benefits"><span class=" checkbox-indicator">Блок преимуществ</span>
           </label>
-          <label>
+          <label class="disabled">
             <input type="checkbox" name="news" checked disabled><span class="checkbox-indicator">Новости</span>
           </label>
           <label>
@@ -119,8 +119,8 @@
           <a href="#1">По типу</a>
           <a href="#1">По функционалу</a>
           <div class="sort-btn">
-            <a class="btn-down" href="#1">#</a>
-            <a class="btn-up" href="#1">#</a>
+            <a class="btn-down" href="#1"></a>
+            <a class="btn-up" href="#1"></a>
           </div>
         </div>
         <div class="wrapper">
@@ -136,8 +136,7 @@
 							  Aviator
 							</h3>
               <p>
-                Одностраничный макет
-                <br> с авторским дизайном
+                Одностраничный макет с авторским дизайном
               </p>
               <a href="#1">8000 р.</a>
             </div>
@@ -155,8 +154,7 @@
 							  Sunset
 							</h3>
               <p>
-                Интернет-магазин
-                <br> с личным кабинетом
+                Интернет-магазин с личным кабинетом
               </p>
               <a href="#1">10000 р.</a>
             </div>
@@ -174,8 +172,7 @@
 							  Forte
 							</h3>
               <p>
-                Отличный макет
-                <br> для личного блога
+                Отличный макет для личного блога
               </p>
               <a href="#1">5000 р.</a>
             </div>
@@ -189,9 +186,9 @@
             </div>
             <img src="img/modern.jpg" width="240" height="240" alt="Modern Organic Thai">
             <div class="block-hide">
-              <a class="modern-h3" href="#"><h3>
-							  Modern Organic Thai
-              </h3></a>
+              <h3>
+							   Thai
+              </h3>
               <p>
                 Сайт для ресторана быстрого питания
               </p>
@@ -211,8 +208,7 @@
                 Avenue
               </h3>
               <p>
-                Макет для блога
-                <br> о путешествиях
+                Макет для блога о путешествиях
               </p>
               <a href="#1">8000 р.</a>
             </div>
@@ -230,8 +226,7 @@
                 Dovetail
               </h3>
               <p>
-                Интернет-магазин
-                <br> с галереей товаров
+                Интернет-магазин с галереей товаров
               </p>
               <a href="#1">14000 р.</a>
             </div>
@@ -247,7 +242,9 @@
       </div>
     </div>
 
-
+     <div class="map-google">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5979706965595!2d30.318094389720905!3d59.93881299206436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462958377923" allowfullscreen></iframe>
+     </div>
     <div class="maps">
       <div class="container">
         <div class="adress-container">
@@ -263,7 +260,7 @@
               тел. +7 (812) 275-75-75
             </p>
           </div>
-          <a class="form-popup" href="#1">Напишите нам</a>
+          <a class="form-popup" href="form.html">Напишите нам</a>
         </div>
       </div>
     </div>
@@ -291,33 +288,34 @@
   </footer>
   <!--Скрытая форма-->
   <div class="popup">
-    <form class="write-us" action="#" method="get">
-      <label>
-        <h3>Ваше имя:</h3>
-        <input type="text" name="name" value="представьтесь, пожалуйста">
+    <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+      <label for="name">
+        Ваше имя:
       </label>
-      <label>
-        <h3>Ваш e-mail:</h3>
-        <input type="email" name="email" value="для отправки ответа">
+      <label for="email">
+        Ваш e-mail:
       </label>
+        <input id="name" type="text" name="name" placeholder="представьтесь, пожалуйста" autofocus>
+        <input id="email" type="email" name="email" placeholder="для отправки ответа">
       <label for="message">
-        <h3>Текст письма:</h3></label>
-      <textarea class="message-1" id="message">В свободной форме
-      </textarea>
+        Текст письма:
+      </label>
+      <textarea class="message" id="message" placeholder="В свободной форме"></textarea>
       <input type="submit" name="message" value="отправить">
     </form>
 
-    <button class="btn-close" href="#1" title="Закрыть">
+    <a class="btn-close" href="#1" title="Закрыть">
       <div class="cross-btn">
         <div class="cross-1"></div>
         <div class="cross-2"></div>
       </div>
       Закрыть
-    </button>
+    </a>
   </div>
+  
   <div class="overlay"></div>
   
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 
 </body>
 
