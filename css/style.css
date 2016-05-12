@@ -55,11 +55,13 @@ img {
 
 .main-header {
   background-color: #eeeeee;
+  padding-top: 27px;
   margin-bottom: 79px;
 }
 
 .main-header-catalog {
   background-color: #eeeeee;
+  padding-top: 27px;
   margin-bottom: 77px;
 }
 
@@ -320,7 +322,6 @@ img {
 .partners a:hover {
   opacity: 1;
 }
-
 
 /*Слайдер начало*/
 
@@ -671,8 +672,6 @@ img {
 .sort .sort-btn {
   float: right;
   position: relative;
-  display: inline-block;
-  vertical-align: top;
   margin-right: 16px;
   width: 27px;
   height: 10px;
@@ -1258,6 +1257,7 @@ img {
   margin-right: 49px;
   margin-left: 1px;
   margin-top: 5px;
+  padding-bottom: 74px;
 }
 
 .main-footer .social-block-right {
@@ -1311,24 +1311,13 @@ img {
   animation: bounce 0.6s;
 }
 
-.popup-error {
-  animation: shake 0.6s;
-}
-
-.popup b {
-  margin: 0;
-  margin-bottom: 9px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 700;
-}
-
 .popup .submit .overlay:hover {
   display: block;
 }
 
 .popup input[type=text],
 .popup input[type=email] {
+  display: inline-block;
   width: 187px;
   font-size: 12px;
   line-height: 18px;
@@ -1336,17 +1325,14 @@ img {
   color: #000;
   text-transform: uppercase;
   padding: 8px 14px;
-  margin-bottom: 21px;
+  margin-bottom: 19px;
   border: 2px solid #d7dcde;
   border-radius: 3px;
 }
 
 .popup input[type=text] {
-  margin-right: 21px;
-}
-
-.popup input[type=email] {
-  padding-right: 15px;
+  margin-right: 0;
+  margin-right: 18px;
 }
 
 .popup input[type=submit] {
@@ -1374,7 +1360,7 @@ img {
 
 .popup .write-us {
   margin-left: 80px;
-  margin-top: 54px;
+  margin-top: 52px;
   margin-right: 90px;
 }
 
@@ -1421,7 +1407,24 @@ img {
 }
 
 .popup label {
-  float: left;
+  display: inline-block;
+  margin-bottom: 13px;
+  margin-right: 40px;
+}
+
+.popup label[for=message] {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.popup label[for=name] {
+  margin-right: 120px;
+}
+
+.popup label[for=name],
+.popup label[for=email] {
+  width: 117px;
+  margin-bottom: 7px;
 }
 
 .popup .message {
@@ -1429,7 +1432,7 @@ img {
   height: 140px;
 }
 
-.popup .message-1 {
+.popup .message {
   width: 429px;
   height: 94px;
   padding: 8px 14px;

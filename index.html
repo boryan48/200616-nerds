@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Средства для ухода</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -36,8 +36,6 @@
           </li>
         </ul>
       </nav>
-
-
 
       <div class="slider">
         <input type="radio" id="btn-1" name="toggle" checked>
@@ -201,7 +199,7 @@
             тел. +7 (812) 275-75-75
           </p>
 
-          <a class="form-popup" href="#">Напишите нам</a>
+          <a class="form-popup" href="form.html">Напишите нам</a>
         </div>
       </div>
     </div>
@@ -229,21 +227,22 @@
 
     </div>
   </footer>
+  
   <!--Скрытая форма-->
   <div class="popup">
-    <form class="write-us" action="#" method="get">
-      <label>
-        <b>Ваше имя:</b>
-        <input type="text" name="name" placeholder="представьтесь, пожалуйста" autofocus>
+    <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+      <label for="name">
+        Ваше имя:
       </label>
-      <label>
-        <b>Ваш e-mail:</b>
-        <input type="email" name="email" placeholder="для отправки ответа">
+      <label for="email">
+        Ваш e-mail:
       </label>
+        <input id="name" type="text" name="name" placeholder="представьтесь, пожалуйста" autofocus>
+        <input id="email" type="email" name="email" placeholder="для отправки ответа">
       <label for="message">
-        <b>Текст письма:</b>
+        Текст письма:
       </label>
-      <textarea class="message-1" id="message" placeholder="В свободной форме"></textarea>
+      <textarea class="message" id="message" placeholder="В свободной форме"></textarea>
       <input type="submit" name="message" value="отправить">
     </form>
 
