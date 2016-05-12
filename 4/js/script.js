@@ -18,4 +18,17 @@ close.addEventListener("click", function (event) {
   shadow.classList.remove("overlay-show");
 });
 
+shadow.addEventListener("click", function(event){
+ event.preventDefault();
+ popup.classList.remove("popup-show");
+ shadow.classList.remove("overlay-show");
+});
 
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (popup.classList.contains("popup-show")) {
+      popup.classList.remove("popup-show");
+      shadow.classList.remove("overlay-show");
+    }  
+  }
+})
