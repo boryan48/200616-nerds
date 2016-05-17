@@ -15,22 +15,20 @@ body {
   position: relative;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
   background: #fff;
-  color: black;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  color: #000;
+  font-weight: 500;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 h1 {
   font-size: 40px;
-  font-weight: 400;
   line-height: normal;
 }
 
 h2 {
   font-size: 36px;
   line-height: 36px;
-  font-weight: 300;
   margin-bottom: 17px;
 }
 
@@ -40,6 +38,7 @@ img {
 }
 
 .main-header-catalog h1 {
+  float: left;
   text-align: center;
   display: inline-block;
   vertical-align: top;
@@ -47,10 +46,7 @@ img {
   margin-top: 19px;
   margin-bottom: 84px;
   text-transform: uppercase;
-}
-
-.main-header h1 {
-  text-align: center;
+  font-weight: 500;
 }
 
 .main-header {
@@ -292,7 +288,7 @@ img {
   vertical-align: top;
 }
 
-.partners .glukhanko {
+.glukhanko img {
   width: 198px;
   height: 37px;
   margin-left: 12px;
@@ -659,7 +655,7 @@ img {
   line-height: 18px;
 }
 
-.sort a {
+.sort-price a {
   margin-right: 41px;
   font-size: 12px;
   line-height: 18px;
@@ -764,30 +760,30 @@ img {
   border-radius: 3px;
 }
 
-.sort .btn-down:active:after {
+.sort-price .btn-down:active:after {
   border-bottom: 10px solid #000;
 }
 
-.sort .btn-up:active:after {
+.sort-price .btn-up:active:after {
   border-top: 10px solid #000;
 }
 
-.sort a:hover {
+.sort-price a:hover {
   color: #000;
   border-bottom: 1px solid #00ca74;
 }
 
-.sort a:active {
+.sort-price a:active {
   border: 0;
 }
 
-.sort .current {
+.sort-price .current {
   color: #000;
   border: 0;
   cursor: text;
 }
 
-.sort .current:hover {
+.sort-price .current:hover {
   color: #000;
   border: 0;
 }
@@ -816,24 +812,22 @@ img {
   position: relative;
 }
 
-.block-hide h3 {
+.block-hide .title {
+  display: block;
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
-  margin: 0;
   text-transform: uppercase;
   margin-bottom: 13px;
 }
 
 .block-hide p {
-  display: block;
-  vertical-align: top;
   margin: 10px;
   font-size: 14px;
   line-height: 18px;
 }
 
-.block-hide a {
+.block-hide button {
   position: absolute;
   bottom: 29px;
   left: 30px;
@@ -849,19 +843,20 @@ img {
   margin: 0 auto;
   margin-bottom: 0;
   border: 3px solid #fb565a;
+  cursor: pointer;
 }
 
 .block-hide .modern-h3 > a {
   margin-bottom: 0px;
 }
 
-.block-hide a:hover {
+.block-hide button:hover {
   background: #d6494d;
   color: #eee;
   border: 3px solid #d6494d;
 }
 
-.block-hide a:active {
+.block-hide button:active {
   background: #b63538;
   color: #eee;
   border: 3px solid #b63538;
@@ -932,7 +927,7 @@ img {
 }
 
 .price-controls input {
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
   width: 60px;
@@ -954,7 +949,6 @@ img {
 .filter h3 {
   font-size: 18px;
   text-transform: uppercase;
-  font-weight: 300;
   resize: none;
   margin: 0;
   padding: 0;
@@ -970,7 +964,6 @@ img {
 .filter b {
   display: inline-block;
   font-size: 17px;
-  font-weight: 300;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -1175,7 +1168,7 @@ img {
 
 .maps {
   position: relative;
-  width: 1200px;
+  max-width: 100%;
   height: 416px;
   margin-left: auto;
   margin-right: auto;
@@ -1227,7 +1220,7 @@ img {
   padding-left: 21px;
 }
 
-.adress-container h1 {
+.adress-container h2 {
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1291,11 +1284,8 @@ img {
 
 .popup {
   position: fixed;
-  left: 50%;
-  right: 50%;
-  top: 190px;
-  margin-left: -325px;
-  margin-right: -208px;
+  left: calc(50% - 315px);
+  top: 25%;
   z-index: 100;
   display: none;
   width: 630px;
@@ -1319,7 +1309,7 @@ img {
   width: 187px;
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   color: #000;
   text-transform: uppercase;
   padding: 8px 14px;
@@ -1337,8 +1327,7 @@ img {
   width: 100%;
   font-size: 12px;
   line-height: 18px;
-  font-weight: 300;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   background: #fb565a;
   padding: 10px 0;
   color: #fff;
@@ -1436,7 +1425,7 @@ img {
   padding: 8px 14px;
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   color: #000;
   text-transform: uppercase;
   resize: none;
