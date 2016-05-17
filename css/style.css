@@ -4,6 +4,10 @@
   clear: both;
 }
 
+button {
+  cursor: pointer;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -1174,6 +1178,7 @@ img {
   margin-right: auto;
   background-image: url(../img/maps-1.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 73px;
 }
 
