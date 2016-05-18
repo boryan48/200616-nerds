@@ -1,5 +1,5 @@
 .clearfix::after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -98,7 +98,7 @@ img {
 
 .main-navigation a,
 .main-navigation span {
-  color: black;
+  color: #000;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
@@ -107,7 +107,7 @@ img {
 }
 
 .main-navigation .active {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #fb565a;
 }
 
 .main-navigation a:hover {
@@ -130,7 +130,7 @@ img {
 }
 
 .basket:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0px;
   left: -2px;
@@ -141,7 +141,7 @@ img {
 }
 
 .basket:hover:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0px;
   left: -2px;
@@ -152,7 +152,7 @@ img {
 }
 
 .basket:active:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0px;
   left: -2px;
@@ -209,7 +209,7 @@ img {
 
 .about li:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 25px;
   height: 2px;
   background: #fb565a;
@@ -257,7 +257,7 @@ img {
 
 .about-right .since-2004:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 66px;
   height: 2px;
   background: #eee;
@@ -267,7 +267,7 @@ img {
 
 .about-right .since-2004:after {
   position: absolute;
-  content: '';
+  content: "";
   width: 66px;
   height: 2px;
   background: #eee;
@@ -676,7 +676,7 @@ img {
 }
 
 .sort .btn-down:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 32px;
   bottom: -6px;
@@ -685,7 +685,7 @@ img {
 }
 
 .sort .btn-up:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 14px;
   bottom: -12px;
@@ -694,7 +694,7 @@ img {
 }
 
 .sort .btn-up:hover:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 14px;
   bottom: -12px;
@@ -715,7 +715,7 @@ img {
   margin: 0;
   margin-right: 6px;
   margin-left: 0;
-  color: black;
+  color: #000;
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
@@ -1025,7 +1025,7 @@ img {
 }
 
 .filter .radio-indicator:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 1px;
   top: -1px;
@@ -1063,7 +1063,7 @@ img {
 }
 
 .filter .checkbox-indicator:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1107,6 +1107,7 @@ img {
 .main-footer p {
   margin-top: 10px;
   margin-left: 1px;
+  font-weight: 700;
 }
 
 .main-footer .social-btn {
@@ -1175,7 +1176,7 @@ img {
   height: 416px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/maps-1.jpg);
+  background-image: url("../img/maps-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 73px;
@@ -1198,7 +1199,6 @@ img {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 100;
   font-size: 12px;
   color: #eee;
   background: #fb565a;
@@ -1228,7 +1228,7 @@ img {
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   margin-top: 0px;
   margin-bottom: 0px;
 }
