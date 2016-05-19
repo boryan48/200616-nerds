@@ -1098,16 +1098,20 @@ img {
   opacity: .5;
 }
 
-.main-footer h2 {
+.social-block-right p {
+  font-size: 36px;
+  line-height: 36px;
   font-weight: 500;
   margin: 0;
-  margin-top: 2px;
 }
 
-.main-footer p {
-  margin-top: 10px;
-  margin-left: 1px;
-  font-weight: 700;
+.social-block-right span {
+  display: inline-block;
+  padding-top: 12px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #283136;
 }
 
 .main-footer .social-btn {
